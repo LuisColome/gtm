@@ -4,7 +4,7 @@
 
 ## Author:
 
-Luis Colomé ( [@luiscolome](https://twitter.com/luiscolome) / [guidetomalaga.com](https://guidetomalaga.com) )
+Luis Colomé ( [@luiscolome](https://twitter.com/luiscolome) / [LuisColome.com](https://luiscolome.com) )
 
 ## Summary
 
