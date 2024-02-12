@@ -3,6 +3,23 @@
     "title": "Businesses custom fields",
     "fields": [
         {
+            "key": "field_65ca4f7cc6801",
+            "label": "Common fields",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
             "key": "field_5df8947934573",
             "label": "Web link",
             "name": "drtr_web_link",
@@ -56,6 +73,63 @@
             "placeholder": "name@domain.com",
             "prepend": "",
             "append": ""
+        },
+        {
+            "key": "field_65ca4f95c6802",
+            "label": "Featured fields",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_65ca4fa3c6803",
+            "label": "Button text",
+            "name": "drtr_button_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "These fields work conditionality based on the link filed. If the link field is not fill up, the button on the directory won't change.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_65ca4fb7c6804",
+            "label": "Button link (Phone or email)",
+            "name": "drtr_button_link",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Enter the kind of link you need, phone (tel:+34615615615) or email (mailto:name@mydomain.com). This is not a URL field, so no there will be no link validation. Please, make sure you enter the right option.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -75,6 +149,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "show_in_rest": false,
-    "modified": 1706609738
+    "show_in_rest": 0,
+    "modified": 1707758506
 }
