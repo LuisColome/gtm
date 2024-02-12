@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 #### Fixed
 
--   Vertical image aligment on new Featured Hotel custom blocks.
+-   Vertical image alignment on new Featured Hotel custom blocks.
 
 ### [0.5.0] - 2024-02-12
 
