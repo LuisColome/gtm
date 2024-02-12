@@ -9,6 +9,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 #### Fixed
 
+-   Spacing on triepl featured hotel custom block.
+
+#### Added
+
+-   New custom fields for directory items
+-   Conditional button for directory listings, based on the new custom fields.
+
+### [0.5.2](https://github.com/LuisColome/gtm/releases/tag/v0.5.2) - 2024-02-12
+
+#### Fixed
+
 -   Fixed Prepros config file.
 
 #### Changed

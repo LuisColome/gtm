@@ -1,6 +1,6 @@
 # GuideToMalaga.com Kadence Child Theme
 
-[![GuideToMalaga Kadence Child Theme badge][changelog-badge]][changelog] [![Version v0.5.2 Badge][version-badge]][changelog]
+[![GuideToMalaga Kadence Child Theme badge][changelog-badge]][changelog] [![Version v0.5.3 Badge][version-badge]][changelog]
 
 ## Author:
 
@@ -34,5 +34,5 @@ Without these projects, this WordPress Genesis Child Theme wouldn't be where it 
 -   [Laragon](https://laragon.org/)
 
 [changelog]: ./CHANGELOG.md
-[changelog-badge]: https://img.shields.io/badge/Changelog-GuideToMalaga%20Kadence%20Child%20Theme%20v0.5.2-yellowgreen
-[version-badge]: https://img.shields.io/badge/version-0.5.2-informational.svg
+[changelog-badge]: https://img.shields.io/badge/Changelog-GuideToMalaga%20Kadence%20Child%20Theme%20v0.5.3-yellowgreen
+[version-badge]: https://img.shields.io/badge/version-0.5.3-informational.svg
