@@ -1,0 +1,58 @@
+@use "../abstracts/custom-props" as *;
+@use "../vendor/include-media.scss" as *;
+
+/* EDD Shop archive page
+---------------------------------------- */
+.wp-block-edd-downloads {
+    .edd-blocks__download {
+        &-header {
+            h3 {
+                font-family: var(--ff-heading);
+                margin-block-end: 1rem;
+            }
+        }
+
+        &-content {
+            p {
+                margin-block-end: 1rem;
+            }
+        }
+
+        &-price {
+            margin-block-end: 1rem;
+            .edd_price {
+                font-size: clamp(1.5rem, 4vw, 3rem);
+                font-family: var(--ff-heading);
+                line-height: 0.9;
+                font-weight: 600;
+            }
+        }
+
+        &-footer {
+            .eed_submit {
+                font-family: var(--ff-heading);
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+/* EDD single download
+---------------------------------------- */
+.single-download {
+    .edd_price {
+        font-size: clamp(1.5rem, 4vw, 3rem);
+        font-family: var(--ff-heading);
+        line-height: 0.9;
+        font-weight: 600;
+        margin-block-end: 1rem;
+        display: block;
+    }
+
+    .edd-submit.button {
+        font-family: var(--ff-heading);
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}

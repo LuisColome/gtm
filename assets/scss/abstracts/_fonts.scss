@@ -1,0 +1,41 @@
+/* Fonts
+--------------------------------------------- */
+@font-face {
+    font-family: "Source Sans PRO";
+    src: url("/wp-content/themes/gtm/assets/fonts/source-sans-pro-v21-latin-600.woff2")
+            format("woff2"),
+        url("/wp-content/themes/gtm/assets/fonts/source-sans-pro-v21-latin-600.woff")
+            format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Source Sans PRO";
+    src: url("/wp-content/themes/gtm/assets/fonts/source-sans-pro-v21-latin-700.woff2")
+            format("woff2"),
+        url("/wp-content/themes/gtm/assets/fonts/source-sans-pro-v21-latin-700.woff")
+            format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Source Serif PRO";
+    src: url("/wp-content/themes/gtm/assets/fonts/source-serif-pro-v15-latin-regular.woff2")
+            format("woff2"),
+        url("/wp-content/themes/gtm/assets/fonts/source-serif-pro-v15-latin-regular.woff")
+            format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Source Serif PRO";
+    src: url("/wp-content/themes/gtm/assets/fonts/source-serif-pro-v15-latin-700.woff2")
+            format("woff2"),
+        url("/wp-content/themes/gtm/assets/fonts/source-serif-pro-v15-latin-700.woff")
+            format("woff");
+    font-weight: 700;
+    font-style: normal;
+}

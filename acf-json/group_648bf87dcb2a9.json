@@ -1,0 +1,108 @@
+{
+    "key": "group_648bf87dcb2a9",
+    "title": "Block - Timeline",
+    "fields": [
+        {
+            "key": "field_648bfa5d8a1de",
+            "label": "Timeline",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_648bf87e23682",
+            "label": "Timeline",
+            "name": "timeline",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Event",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_648bf89323683",
+                    "label": "Timeline Item Title",
+                    "name": "timeline_item_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "The title (or date, year...) for the timeline event.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "Title of the event",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_648bf87e23682"
+                },
+                {
+                    "key": "field_648bf8e523684",
+                    "label": "Timeline Item Content",
+                    "name": "timeline_item_content",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "The content you want to display on the timeline event.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 1,
+                    "parent_repeater": "field_648bf87e23682"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-guidetomalaga-options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1706699537
+}

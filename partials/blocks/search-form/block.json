@@ -1,0 +1,21 @@
+{
+    "name": "acf/gtm-block-search",
+    "title": "GuideToMalaga advance Search block",
+    "description": "Advance Search Block for GuideToMalaga.",
+    "category": "formating",
+    "icon": "search",
+    "keywords": [
+        "search",
+        "form",
+        "advance",
+        "searching",
+        "gtm",
+        "guidetomalaga",
+        "guide"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "search-form.php"
+    },
+    "align": "full"
+}

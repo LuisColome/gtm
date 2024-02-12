@@ -1,0 +1,45 @@
+{
+    "key": "group_63a1d05f21804",
+    "title": "Ebooks (downlad CPT)",
+    "fields": [
+        {
+            "key": "field_63a1d0603cb63",
+            "label": "Subtitle (Intro text)",
+            "name": "gtm_intro_text",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Write something here that you want to appear under the title as a subtitle or a short intro text.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "download"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1706609819
+}

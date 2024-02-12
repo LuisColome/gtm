@@ -1,0 +1,13 @@
+{
+    "name": "acf/featured-hotel",
+    "title": "GTM Featured Hotel custom block",
+    "description": "Custom block to featured a hotel in nay post",
+    "category": "theme",
+    "icon": "building",
+    "keywords": ["featured", "hotel"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "featured-hotel.php"
+    },
+    "align": "full"
+}

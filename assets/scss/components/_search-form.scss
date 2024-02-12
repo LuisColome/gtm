@@ -1,0 +1,178 @@
+@use "../abstracts/custom-props" as *;
+@use "../vendor/include-media.scss" as *;
+
+/* Search
+--------------------------------------------------- */
+
+select {
+    // A reset of styles, including removing the default dropdown arrow
+    appearance: none;
+    // Additional resets for further consistency
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+
+    &::-ms-expand {
+        display: none;
+    }
+}
+
+.entry-content {
+    .gtm-search {
+        max-width: 30rem;
+        margin-inline: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+
+        // Let's reset styles
+        select.gtm-search__dropdown {
+            appearance: none !important;
+            background: transparent;
+            border: none;
+            padding: 0 1em 0 0;
+            margin: 0;
+            width: 100%;
+            font-family: inherit;
+            font-size: inherit;
+            cursor: pointer;
+            line-height: inherit;
+            text-indent: 1px;
+            text-overflow: "";
+
+            &::-ms-expand {
+                display: none !important;
+            }
+        }
+        &__select {
+            position: relative;
+            background-color: var(--wp--preset--color--theme-palette-2);
+            display: grid;
+            place-items: center;
+
+            &::after {
+                content: "<>";
+                font: 22px "Consolas", monospace;
+                color: var(--wp--preset--color--theme-palette-5);
+                -webkit-transform: rotate(90deg) translateX(-50%);
+                -moz-transform: rotate(90deg) translateX(-50%);
+                -ms-transform: rotate(90deg) translateX(-50%);
+                transform: rotate(90deg) translateX(-50%);
+                right: 10px;
+                top: 45%;
+                padding: 0 0 2px;
+                position: absolute;
+                pointer-events: none;
+            }
+        }
+
+        &__field,
+        &__select,
+        &__submit {
+            padding: 0.2rem 0.75rem;
+            border: 1px solid var(--wp--preset--color--theme-palette-5);
+            // border-radius: var(--border-radius);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+            height: 3rem;
+            font-family: "Source Sans Pro", sans-serif;
+        }
+
+        // make sure the imput fill all the width
+        &__field {
+            width: 100%;
+            padding-inline-start: 2rem;
+
+            &:focus,
+            &:active {
+                border-color: var(--wp--preset--color--theme-palette-5);
+            }
+            // make sure is invisible
+            &::placeholder {
+                color: white;
+            }
+        }
+
+        label {
+            position: relative;
+
+            .gtm-search__icon {
+                position: absolute;
+                color: var(--wp--preset--color--theme-palette-5);
+                width: 20px;
+                height: 20px;
+                left: 8px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        &__select,
+        &__submit {
+            order: 2;
+        }
+
+        @include media(">=tablet") {
+            max-width: 100%;
+            grid-template-columns: 2fr 4fr 1fr;
+            gap: 0;
+
+            &__field,
+            &__select,
+            &__submit {
+                border: 2px solid var(--wp--preset--color--theme-palette-5);
+                border-radius: 0;
+                box-shadow: none;
+            }
+
+            &__field,
+            &__select {
+                border-right: none;
+            }
+
+            &__select {
+                border-radius: 8px 0px 0px 8px;
+                background-color: var(--wp--preset--color--theme-palette-2);
+            }
+
+            &__submit {
+                border-radius: 0px 8px 8px 0px;
+            }
+
+            &__select,
+            &__submit {
+                order: 0;
+            }
+        }
+    }
+
+    // .gtm-search {
+    //     display: grid;
+    //     grid-template-columns: 2fr 4fr 1fr;
+    //     gap: -2px;
+
+    //     // make sure the imput fill all the width
+    //     &__field {
+    //         width: 100%;
+    //     }
+
+    //     &__field,
+    //     &__select,
+    //     &__submit {
+    //         border: 2px solid var(--wp--preset--color--theme-palette-5);
+    //         border-radius: 0;
+    //         height: 3rem;
+    //     }
+
+    //     &__field,
+    //     &__select {
+    //         // border-right: none;
+    //     }
+    // }
+}

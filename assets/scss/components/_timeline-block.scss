@@ -1,0 +1,146 @@
+@use "../abstracts/custom-props" as *;
+@use "../vendor/include-media.scss" as *;
+
+/* Timeline custom block
+----------------------------------------------------- */
+.timeline {
+    // Some custom properties
+    --hgap: 4rem;
+    --vgap: 1rem;
+    --item-width: calc(100% - var(--hgap) / 2);
+    --br: 2px;
+    --dot-size: 0.75rem;
+    --line-width: 4px;
+
+    // Some positioning and properties for the timeline line.
+    width: 100%;
+    max-width: 54rem;
+    position: relative;
+    overflow: hidden;
+    margin-block: 2rem;
+    margin-inline: auto;
+
+    &__inner {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: var(--vgap) var(--hgap);
+    }
+
+    // Item width
+    &__item,
+    &__empty {
+        width: var(--item-width);
+    }
+
+    // Do not display empty items.
+    &__empty {
+        display: none;
+    }
+
+    // Timeline's vertical line
+    &::before {
+        content: "";
+        position: absolute;
+        width: var(--line-width);
+        background-color: var(--wp--preset--color--theme-palette-6);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        transform: translateX(calc(var(--dot-size) / 2));
+    }
+
+    // Timeline's child item
+    &__item {
+        padding: 1rem;
+        background-color: var(--wp--preset--color--theme-palette-6);
+        transform: translateX(calc(var(--hgap) / 2));
+        border-radius: var(--br);
+
+        // Light blue arrow on the item.
+        &::before {
+            content: "";
+            position: absolute;
+            border-top: 15px solid transparent;
+            border-right: 15px solid var(--wp--preset--color--theme-palette-6);
+            border-bottom: 15px solid transparent;
+            left: -12px;
+            top: 2rem;
+            transform: translateY(-50%);
+        }
+
+        // Orange dot on the Timeline for every item.
+        &::after {
+            content: "";
+            position: absolute;
+            width: var(--dot-size);
+            height: var(--dot-size);
+            border-radius: var(--dot-size);
+            background-color: var(--wp--preset--color--theme-palette-1);
+            left: 0;
+            top: 2rem;
+            transform: translateX(
+                    calc(((var(--hgap) / 2) - (var(--line-width) / 2)) * -1)
+                )
+                translateY(-50%);
+        }
+    }
+
+    // We have to add some specificity to style the title
+    .wp-site-blocks & {
+        .timeline__title {
+            margin-block-end: 1rem;
+        }
+    }
+
+    @include media(">=600px") {
+        --item-width: calc(50% - var(--hgap) / 2);
+
+        &__empty {
+            display: block;
+        }
+
+        &::before {
+            left: 50%;
+            transform: translateX(-2px);
+        }
+
+        &__inner {
+            display: flex;
+            flex-flow: row wrap;
+            gap: var(--vgap) var(--hgap);
+        }
+
+        &__item {
+            transform: translateX(0);
+
+            &::after {
+                transform: translateX(calc(((var(--hgap) / 2) + 50%) * -1))
+                    translateY(-50%);
+            }
+
+            &:nth-child(odd) {
+                &::before {
+                    content: "";
+                    position: absolute;
+                    border-top: 15px solid transparent;
+                    border-left: 15px solid
+                        var(--wp--preset--color--theme-palette-6);
+                    border-right: none;
+                    border-bottom: 15px solid transparent;
+                    left: auto;
+                    right: -12px;
+                    top: 2rem;
+                    transform: translateY(-50%);
+                }
+
+                &::after {
+                    left: auto;
+                    right: 0;
+                    // transform: translate3d(1rem, -50%, 0);
+                    transform: translateX(calc(((var(--hgap) / 2) + 50%)))
+                        translateY(-50%);
+                }
+            }
+        }
+    }
+}

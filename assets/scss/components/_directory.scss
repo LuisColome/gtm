@@ -1,0 +1,214 @@
+@use "../abstracts/custom-props" as *;
+@use "../vendor/include-media.scss" as *;
+
+// Search
+.wp-block-group.gtm-directory-search {
+    gap: 0;
+
+    .wp-block-group__inner-container {
+        max-width: 30rem;
+        margin-inline: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem 0;
+
+        // Let's reset styles
+        select.facetwp-dropdown {
+            appearance: none !important;
+            background: transparent;
+            border: none;
+            padding: 0 1em 0 0;
+            margin: 0;
+            width: 100%;
+            font-family: inherit;
+            font-size: inherit;
+            cursor: pointer;
+            line-height: inherit;
+            text-indent: 1px;
+            text-overflow: "";
+
+            &::-ms-expand {
+                display: none !important;
+            }
+        }
+
+        select.facetwp-dropdown {
+            background-color: var(--wp--preset--color--theme-palette-2);
+            display: grid;
+            place-items: center;
+        }
+
+        .facetwp-facet-select_directory {
+            position: relative;
+
+            &::after {
+                content: "<>";
+                font: 22px "Consolas", monospace;
+                color: var(--wp--preset--color--theme-palette-5);
+                transform: rotate(90deg) translateX(-50%);
+                // width: 10px;
+                // height: 20px;
+                right: 10px;
+                top: 45%;
+                padding: 0 0 2px;
+                position: absolute;
+                pointer-events: none;
+            }
+        }
+
+        .facetwp-facet {
+            width: 100%;
+            margin: 0;
+
+            .facetwp-dropdown,
+            .facetwp-search,
+            .fwp-submit {
+                padding: 0.2rem 0.75rem;
+                border: 1px solid var(--wp--preset--color--theme-palette-5);
+                // border-radius: var(--border-radius);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 8px;
+                height: 3rem;
+                font-family: "Source Sans Pro", sans-serif;
+                width: 100%;
+            }
+
+            .fwp-submit {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .facetwp-input-wrap {
+                width: 100%;
+            }
+        }
+
+        @include media(">=tablet") {
+            max-width: 100%;
+            grid-template-columns: 1.5fr 2fr 1fr;
+            gap: 0;
+
+            .facetwp-facet {
+                .facetwp-dropdown,
+                .facetwp-search,
+                .fwp-submit {
+                    border: 2px solid var(--wp--preset--color--theme-palette-5);
+                    // border-radius: var(--border-radius);
+                    box-shadow: none;
+                    border-radius: 0;
+                }
+
+                .facetwp-dropdown,
+                .facetwp-search {
+                    border-right: none;
+                }
+
+                .facetwp-dropdown {
+                    border-radius: 8px 0px 0px 8px;
+                    background-color: var(--wp--preset--color--theme-palette-2);
+                }
+
+                .fwp-submit {
+                    border-radius: 0px 8px 8px 0px;
+                }
+            }
+        }
+    }
+}
+
+// Directory Grid
+.directory {
+    &.directory__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(232px, 1fr));
+        gap: 1rem;
+    }
+}
+
+// Modify Directory taxonomy archive pages.
+.directory-archive {
+    .grid-cols {
+        gap: 1rem;
+        &.grid-lg-col-3 {
+            grid-template-columns: repeat(auto-fill, minmax(232px, 1fr));
+        }
+    }
+}
+
+// Directory Businesses
+.directory {
+    .business {
+        background-color: var(--wp--preset--color--theme-palette-6);
+        padding: 1rem;
+        // font-family: var(--ff-heading);
+
+        &__img {
+            display: grid;
+            place-items: center;
+            width: 100%;
+            max-width: 150px;
+            padding: 1rem;
+            margin-block-end: 1rem;
+            margin-inline: auto;
+            // min-height: 7rem;
+            background-color: #fff;
+        }
+
+        &__header .business__title {
+            display: inherit;
+            margin-block: 0.5rem 1rem;
+            font-size: 22px;
+        }
+
+        &__excerpt {
+            font-weight: normal;
+        }
+
+        &__link {
+            display: flex;
+            flex-flow: row wrap;
+            gap: 0.5rem;
+
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+// Directory Categoriess
+.lcm-business-categories {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+
+    // &__button-wrap {
+    // margin-inline: 0;
+    /* margin-block: 1rem; */
+    // }
+
+    &__button {
+        font-family: var(--ff-heading);
+        color: var(--wp--preset--color--theme-palette-5);
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: -0.04rem;
+        border: 1px solid var(--wp--preset--color--theme-palette-5);
+        border-radius: 0.5rem;
+        background-color: #fff;
+        padding: 0.5rem 1rem;
+        margin: 0;
+        display: block;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            color: var(--wp--preset--color--theme-palette-5);
+            background-color: var(--wp--preset--color--theme-palette-2);
+        }
+    }
+}

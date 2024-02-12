@@ -1,0 +1,48 @@
+:root {
+    --wp--preset--color--theme-palette-1: #f29200;
+    --wp--preset--color--theme-palette-2: #f9b234;
+    --wp--preset--color--theme-palette-3: #2c2e83;
+    --wp--preset--color--theme-palette-4: #009fe3;
+    --wp--preset--color--theme-palette-5: #444444;
+    --wp--preset--color--theme-palette-6: #f2f6fe;
+    --wp--preset--color--theme-palette-7: #ffffff;
+    --ff-heading: "Source Sans Pro", sans-serif;
+    --border-radius: 10px;
+}
+
+.fh-item {
+    max-width: 600px;
+    /* Inside content */
+}
+.fh-item__tag {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    margin: 0;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: var(--wp--preset--color--theme-palette-6);
+}
+.fh-item__content {
+    padding: 1rem 2rem;
+    border: 2px solid var(--main-color);
+}
+.fh-item__text {
+    font-family: var(--bf);
+    font-size: 18px;
+}
+.fh-item__title__link {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+.fh-item__title {
+    margin-block: 0.5rem;
+    font-size: 1.75rem;
+}
+.fh-item__image {
+    margin: 0;
+}
+.fh-item__image img {
+    max-width: 100%;
+    width: 100%;
+}

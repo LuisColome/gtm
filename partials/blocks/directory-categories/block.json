@@ -1,0 +1,21 @@
+{
+    "name": "acf/gtm-block-business-categories",
+    "title": "Business category list",
+    "description": "A list of business categories as grid of buttons for GuideToMalaga.",
+    "category": "theme",
+    "icon": "editor-ul",
+    "keywords": [
+        "category",
+        "caetgories",
+        "directory",
+        "business",
+        "gtm",
+        "guidetomalaga",
+        "business"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "directory-categories.php"
+    },
+    "align": "full"
+}

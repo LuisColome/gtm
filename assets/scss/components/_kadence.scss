@@ -1,0 +1,119 @@
+@use "../abstracts/custom-props" as *;
+@use "../vendor/include-media.scss" as *;
+
+/* Kadence
+--------------------------------------------------- */
+/* Border radius at the grids */
+.wp-block-kadence-postgrid.posts-with-border-radius .kadence-post-image img {
+    border-radius: 10px;
+}
+
+/* Categories at the grids */
+.kt-blocks-above-categories a {
+    text-decoration: none;
+}
+
+.site-footer .footer-html {
+    margin: 0.2em 0;
+}
+
+// Adding the small chevron arrow for the "Read More" links
+.wp-block-kadence-postgrid.kt-blocks-post-loop-block {
+    .entry-content {
+        .kt-blocks-post-readmore {
+            position: relative;
+            font-family: var(--ff-heading);
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            &::before {
+                content: ">";
+                font-family: var(--ff-heading);
+                font-size: inherit;
+                font-weight: inherit;
+                position: relative;
+                padding-right: 0.21rem;
+            }
+        }
+    }
+}
+
+// Adding the small chevron arrow for category links on main pages (Events, Do, See...)
+.entry-content {
+    .link-with-chevron {
+        a {
+            position: relative;
+            font-family: var(--ff-heading);
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            &:hover {
+                color: var(--wp--preset--color--theme-palette-2);
+            }
+
+            &::before {
+                content: ">";
+                font-family: var(--ff-heading);
+                font-size: inherit;
+                font-weight: inherit;
+                position: relative;
+                padding-right: 0.21rem;
+            }
+        }
+    }
+}
+
+// Pagination
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .nav-links {
+        .page-numbers {
+            font-family: var(--ff-heading);
+        }
+    }
+}
+
+//Header
+.popup-drawer .drawer-inner .drawer-header {
+    min-height: calc(2rem + 40px);
+}
+
+// mobile navigation
+.mobile-navigation {
+    ul {
+        li {
+            > a {
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+// Invisible border for mega menu tabs on desktop
+.site-header {
+    .wp-block-kadence-tabs {
+        &.gtm-mega-menu-tabs
+            .kt-tabs-title-list
+            .kt-tab-title-active
+            .kt-tab-title,
+        &.gtm-mega-menu-tabs
+            > .kt-tabs-content-wrap
+            > .kt-tabs-accordion-title.kt-tab-title-active
+            .kt-tab-title,
+        &.gtm-mega-menu-tabs .kt-tabs-title-list li .kt-tab-title,
+        &.gtm-mega-menu-tabs
+            .kt-tabs-content-wrap
+            .kt-tabs-accordion-title
+            .kt-tab-title {
+            @include media(">=960px") {
+                border-color: white;
+            }
+        }
+    }
+}

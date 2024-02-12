@@ -1,0 +1,11 @@
+@use "../abstracts/custom-props" as *;
+@use "../vendor/include-media.scss" as *;
+
+.wp-block-button {
+    &__link {
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}

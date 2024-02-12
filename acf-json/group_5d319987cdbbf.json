@@ -1,0 +1,225 @@
+{
+    "key": "group_5d319987cdbbf",
+    "title": "GTM New Landing (English)",
+    "fields": [
+        {
+            "key": "field_5d319987dfb83",
+            "label": "Landing title",
+            "name": "landing_title_en",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Landing page Title",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d319987dfbf1",
+            "label": "Information beside Form",
+            "name": "info_beside_en",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "Information display beside the form",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_5d319987dfc5e",
+            "label": "Form shortocode",
+            "name": "form_shortocode_en",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Form shortcode",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d39cb92f5f8a",
+            "label": "Banner text (phone)",
+            "name": "banner_text_phone_en",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d39cbabf5f8b",
+            "label": "Banner text (email)",
+            "name": "banner_text_email_en",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d319987dfccb",
+            "label": "Second title",
+            "name": "second_title_en",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Title after the image block",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d319987dfd38",
+            "label": "Body content \"Why Guide To Malaga?\"",
+            "name": "content_why_en",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "Information \"why Guide To Malaga\" section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_5d319987dfda4",
+            "label": "Text Button",
+            "name": "text_button_en",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Text of the main button within the content of the page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d319987dfe6a",
+            "label": "Contact email",
+            "name": "contact_email_en",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Contact email",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d319987dfed8",
+            "label": "Contact Phone",
+            "name": "contact_phone_en",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Contact Phone",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "7181"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": false,
+    "modified": 1706609822
+}

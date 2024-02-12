@@ -1,0 +1,80 @@
+{
+    "key": "group_5df89472336f2",
+    "title": "Businesses custom fields",
+    "fields": [
+        {
+            "key": "field_5df8947934573",
+            "label": "Web link",
+            "name": "drtr_web_link",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "La url del sitio a enlazar",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_5df894e634575",
+            "label": "Phone number",
+            "name": "drtr_phone",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Phone number to contact",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5df8955234576",
+            "label": "Email",
+            "name": "drtr_email",
+            "aria-label": "",
+            "type": "email",
+            "instructions": "Email to contact",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "name@domain.com",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "directory"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": false,
+    "modified": 1706609738
+}

@@ -1,0 +1,49 @@
+@use "../abstracts/custom-props" as *;
+@use "../vendor/include-media.scss" as *;
+
+.search-results {
+    .entry-header {
+        .page-title {
+            margin-block: 3rem 4rem;
+            span {
+                color: var(--wp--preset--color--theme-palette-1);
+            }
+        }
+    }
+
+    .entry {
+        // Rounded corners on featured images.
+        .post-thumbnail {
+            img {
+                border-radius: 8px;
+            }
+        }
+
+        // Styling Read more link.
+        .entry-footer {
+            .post-more-link {
+                font-family: var(--ff-heading);
+                font-size: 1rem;
+                font-weight: 600;
+                letter-spacing: -0.004em;
+                color: var(--wp--preset--color--theme-palette-1);
+                position: relative;
+                padding-inline-start: 0.21rem;
+
+                svg {
+                    display: none;
+                }
+
+                // Adding the small chevron arrow for the "Read More" links
+                &::before {
+                    content: ">";
+                    font-family: var(--ff-heading);
+                    font-size: inherit;
+                    font-weight: inherit;
+                    position: relative;
+                    // padding-right: 0.21rem;
+                }
+            }
+        }
+    }
+}

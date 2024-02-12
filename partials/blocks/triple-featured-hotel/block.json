@@ -1,0 +1,13 @@
+{
+    "name": "acf/triple-featured-hotel",
+    "title": "GTM Triple Featured Hotel custom block",
+    "description": "Custom block to featured three hotels in any post",
+    "category": "theme",
+    "icon": "building",
+    "keywords": ["featured", "hotel"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "triple-featured-hotel.php"
+    },
+    "align": "full"
+}

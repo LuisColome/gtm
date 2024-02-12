@@ -1,0 +1,21 @@
+{
+    "name": "acf/gtm-block-business-by-choice",
+    "title": "GuideToMalaga Businesses by Choice",
+    "description": "GTM block to choose what businesses to display.",
+    "category": "formating",
+    "icon": "building",
+    "keywords": [
+        "business",
+        "choice",
+        "advance",
+        "directory",
+        "gtm",
+        "guidetomalaga",
+        "business"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "business-by-choice.php"
+    },
+    "align": "full"
+}

@@ -1,0 +1,13 @@
+{
+    "name": "acf/gtm-timeline",
+    "title": "GuideToMalaga Timeline",
+    "description": "Custom Timeline block for guidetomalaga.com",
+    "category": "theme",
+    "icon": "list-view",
+    "keywords": ["timeline", "about us", "nosotros", "linea temporal"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "gtm-timeline.php"
+    },
+    "align": "full"
+}
