@@ -711,7 +711,7 @@ select::-ms-expand {
 
 /* Triple hotel destacado 
 ---------------------------------------------------- */
-.tfh-grid {
+.entry-content .tfh-grid {
     --fh-clr: #6ec8ef;
     position: relative;
     overflow-x: hidden;
@@ -719,11 +719,11 @@ select::-ms-expand {
     margin-block: 1.5rem;
 }
 @media (max-width: 1024px) {
-    .tfh-grid {
+    .entry-content .tfh-grid {
         margin-right: -16px;
     }
 }
-.tfh-grid__container {
+.entry-content .tfh-grid__container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1rem 1fr 1rem 1fr;
@@ -732,7 +732,7 @@ select::-ms-expand {
     position: relative;
 }
 @media (max-width: 1024px) {
-    .tfh-grid__container {
+    .entry-content .tfh-grid__container {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -745,15 +745,15 @@ select::-ms-expand {
         direction: ltr;
         margin-bottom: 10px;
     }
-    .tfh-grid__container::-webkit-scrollbar {
+    .entry-content .tfh-grid__container::-webkit-scrollbar {
         height: 8px;
     }
-    .tfh-grid__container::-webkit-scrollbar-thumb {
+    .entry-content .tfh-grid__container::-webkit-scrollbar-thumb {
         background: #a4d0f0;
         border-radius: 10px;
     }
 }
-.tfh-grid__item {
+.entry-content .tfh-grid__item {
     position: relative;
     z-index: 0;
     padding: 0;
@@ -764,13 +764,13 @@ select::-ms-expand {
             flex: 0 0 33.3334%;
 }
 @media (max-width: 1024px) {
-    .tfh-grid__item {
+    .entry-content .tfh-grid__item {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 66.6667%;
                 flex: 0 0 66.6667%;
     }
 }
-.tfh-grid__card--vertical {
+.entry-content .tfh-grid__card--vertical {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -782,7 +782,7 @@ select::-ms-expand {
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
 }
-.tfh-grid__tag {
+.entry-content .tfh-grid__tag {
     position: static;
     width: 100%;
     display: block;
@@ -795,26 +795,27 @@ select::-ms-expand {
     letter-spacing: 1px;
     background-color: var(--fh-clr);
 }
-.tfh-grid__content {
+.entry-content .tfh-grid__content {
     padding: 0 1rem 1.5rem;
 }
-.tfh-grid__title {
+.entry-content .tfh-grid__title {
     font-size: 1.25rem;
     font-family: var(--ff-heading);
     color: var(--wp--preset--color--theme-palette-4);
     text-align: center;
 }
-.tfh-grid__title__link {
+.entry-content .tfh-grid__title__link {
     text-decoration: none;
 }
-.tfh-grid__text {
+.entry-content .tfh-grid__text {
     font-size: 14px;
     text-align: center;
+    margin-block: 0.5rem 1.5rem;
 }
-.tfh-grid .wp-block-button {
+.entry-content .tfh-grid .wp-block-button {
     text-transform: uppercase;
 }
-.tfh-grid .wp-block-button a {
+.entry-content .tfh-grid .wp-block-button a {
     padding-inline: 2rem;
 }
 
